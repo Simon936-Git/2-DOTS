@@ -60,6 +60,12 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.exe
+
+# Do not commit local builds or IDE metadata
+PlayableBuild/
+[Bb]urstDebugInformation_DoNotShip/
+.idea/
 
 # Crashlytics generated file
 crashlytics-build.properties

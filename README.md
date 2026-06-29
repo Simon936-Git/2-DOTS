@@ -1,32 +1,36 @@
-X-Wing Shooter Game (Unity DOTS)
-Overview
-This is a 2D space shooter where you control an X-Wing and shoot incoming targets. Originally intended as Tie Fighters, the targets had to be simplified due to time constraints. The game uses Unity’s Data-Oriented Technology Stack (DOTS) for high performance and scalability.
+# 2D DOTS Space Shooter
 
-Installation
-Clone the repo.
-Open the project in Unity.
-Press Play to start.
+A **2D space shooter** built with **Unity DOTS** (ECS + Burst) for high-performance entity handling.
 
+## Overview
 
-Performance Optimization
-ECS (Entity Component System)
-Used for handling large numbers of entities (enemies, bullets) efficiently by separating data from behavior, which improves performance through better memory usage and chunking.
+Control an X-Wing-style ship, destroy incoming targets, and avoid collisions. The project focuses on data-oriented design rather than traditional MonoBehaviour-heavy architecture.
 
-Burst Compiler
-Optimized CPU-heavy calculations, improving execution speed and reducing overhead.
+## Tech
 
-Challenges
-Learning DOTS was difficult due to its unique structure compared to traditional Unity.
-Time constraints and illness limited the scope (e.g., Tie Fighters were simplified).
+- Unity DOTS / ECS
+- Burst Compiler
+- C#
 
-Future Improvements
-Add animated Tie Fighters.
-Introduce enemy behaviors and power-ups.
-Further optimize collision detection.
+## How to run
 
-How to Play
-Use arrow keys/WASD to move.
-Press LeftMouse to shoot.
-Avoid enemy collisions!
+1. Clone the repository
+2. Open in Unity Hub
+3. Press Play in the editor
 
-Simon Futuregames Student
+> **Note:** Windows builds are not included in this repo. Build locally via **File → Build Settings** if you need a standalone executable.
+
+## What I learned
+
+- ECS patterns for bullets, enemies, and movement at scale
+- Burst-friendly math and performance trade-offs vs classic Unity
+- Scope management under tight production deadlines
+
+## Controls
+
+- **Move:** WASD / Arrow keys
+- **Shoot:** Left mouse button
+
+---
+
+Simon Olsson · Gameplay Programmer · [Portfolio](https://simon936-git.github.io/Portfolio/)
